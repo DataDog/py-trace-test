@@ -1,0 +1,90 @@
+[[
+  {
+    "name": "fastapi.request",
+    "service": "fastapi",
+    "resource": "POST /items/",
+    "trace_id": 0,
+    "span_id": 1,
+    "parent_id": 0,
+    "type": "web",
+    "meta": {
+      "_dd.base_service": "",
+      "_dd.p.dm": "-0",
+      "component": "fastapi",
+      "http.method": "POST",
+      "http.route": "/items/",
+      "http.status_code": "200",
+      "http.url": "http://testserver/items/",
+      "http.useragent": "testclient",
+      "http.version": "1.1",
+      "language": "python",
+      "runtime-id": "00711884dae84cab958adda67a7be9b6",
+      "span.kind": "server"
+    },
+    "metrics": {
+      "_dd.top_level": 1,
+      "_dd.tracer_kr": 1.0,
+      "_sampling_priority_v1": 1,
+      "process_id": 42682
+    },
+    "duration": 488000,
+    "start": 1692709944194388085
+  },
+     {
+       "name": "fastapi.serialize_response",
+       "service": "fastapi",
+       "resource": "fastapi.serialize_response",
+       "trace_id": 0,
+       "span_id": 2,
+       "parent_id": 1,
+       "meta": {
+         "_dd.base_service": ""
+       },
+       "duration": 91417,
+       "start": 1692709944194696543
+     }],
+[
+  {
+    "name": "fastapi.request",
+    "service": "fastapi",
+    "resource": "GET /items/{item_id}",
+    "trace_id": 1,
+    "span_id": 1,
+    "parent_id": 0,
+    "type": "web",
+    "meta": {
+      "_dd.base_service": "",
+      "_dd.p.dm": "-0",
+      "component": "fastapi",
+      "http.method": "GET",
+      "http.route": "/items/{item_id}",
+      "http.status_code": "200",
+      "http.url": "http://testserver/items/test_id",
+      "http.useragent": "testclient",
+      "http.version": "1.1",
+      "language": "python",
+      "runtime-id": "00711884dae84cab958adda67a7be9b6",
+      "span.kind": "server"
+    },
+    "metrics": {
+      "_dd.top_level": 1,
+      "_dd.tracer_kr": 1.0,
+      "_sampling_priority_v1": 1,
+      "process_id": 42682
+    },
+    "duration": 324084,
+    "start": 1692709944195708918
+  },
+     {
+       "name": "fastapi.serialize_response",
+       "service": "fastapi",
+       "resource": "fastapi.serialize_response",
+       "trace_id": 1,
+       "span_id": 2,
+       "parent_id": 1,
+       "meta": {
+         "_dd.base_service": ""
+       },
+       "duration": 83334,
+       "start": 1692709944195876168
+     }]]
